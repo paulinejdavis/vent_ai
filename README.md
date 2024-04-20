@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 
-## **vent_ai wireframes** 
+## **vent_ai `wireframes`** 
 Sketching the user interface for vent_ai
 
  <img width="1000" alt="wireframe" src="assets/VENT_ASSETS/VENT_AI-01.jpg">&nbsp;&nbsp;&nbsp;
@@ -25,14 +25,14 @@ Sketching the user interface for vent_ai
 
 <br>
 
-### **vent_ai setup:**
+### **vent_ai `setup`:**
 
 ```
 export OPENAI_API_KEY=""
 echo $OPENAI_API_KEY
 ```
 
-### **building vent_ai - the app:**
+### **`building` vent_ai - the app:**
 
 ```
 nvm use 18.7.0
@@ -40,6 +40,6 @@ cd vent_ai
 npm run dev
 ```
 
-### **tech stack**
+### **`tech` stack**
  <img width="175" alt="wireframe" src="assets/VENT_ASSETS/next.jpg"/>&nbsp;&nbsp;&nbsp;
   <img width="125" alt="wireframe" src="assets/VENT_ASSETS/images.png"/>
