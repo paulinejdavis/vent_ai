@@ -94,11 +94,11 @@ export default function Chat() {
 
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50"
-            disabled={isLoading || (!state.buddy || !state.tone)}
+            disabled={isLoading || (!state.genre || !state.tone)}
             onClick={() =>
               append({
                 role: "user",
-                content: `Generate a ${state.buddy} chat in a ${state.tone} tone`,
+                content: `Generate a ${state.genre} chat in a ${state.tone} tone`,
               })
             }
           >

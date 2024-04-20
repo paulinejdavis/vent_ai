@@ -2,7 +2,8 @@ import OpenAI from 'openai';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 
 const openai = new OpenAI({
-  baseURL: "http://127.0.0.1:8000/v1",
+    apiKey: process.env.OPENAI_API_KEY,
+  //baseURL: "http://127.0.0.1:3000/v1",
 });
 
 export const runtime = 'edge';
