@@ -43,3 +43,16 @@ npm run dev
 ### **`tech` stack**
  <img width="175" alt="wireframe" src="assets/VENT_ASSETS/next.jpg"/>&nbsp;&nbsp;&nbsp;
   <img width="125" alt="wireframe" src="assets/VENT_ASSETS/images.png"/>
+
+ <br>
+
+
+
+### **next `steps`**
+ <img width="200" alt="whatsApp" src="assets/VENT_ASSETS/VENT_AI-01 2 Background Removed.png"/> &nbsp;&nbsp;&nbsp;
+ * access to vent_ai within WhatsApp
+ * refactor 
+ * allow users to create their own counsellor
+ * dial when responses being generated
+ * voice note capability along with messaging options
+ * video messaging option between vent_ai counsellor and user
