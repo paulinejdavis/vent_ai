@@ -47,6 +47,7 @@ npm run dev
  <br>
 
 
+![Media_240423_173101](https://github.com/paulinejdavis/vent_ai/assets/111147520/413223f6-5689-4e93-a905-f5f8bdf72045)
 
 ### **next `steps`**
  <img width="200" alt="whatsApp" src="assets/VENT_ASSETS/VENT_AI-01 2 Background Removed.png"/> &nbsp;&nbsp;&nbsp;
