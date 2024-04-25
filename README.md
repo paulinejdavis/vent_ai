@@ -18,6 +18,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## **vent_ai `wireframes`** 
 Sketching the user interface for vent_ai
+[link](https://www.figma.com/file/brnOBDYtJHnNsbNI42ggOc/ipadvent?type=design&node-id=101%3A2&mode=design&t=SVSE8qx9mKP6g9UD-1)
 
  <img width="1000" alt="wireframe" src="assets/VENT_ASSETS/VENT_AI-01.jpg">&nbsp;&nbsp;&nbsp;
 
