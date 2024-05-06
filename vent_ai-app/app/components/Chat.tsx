@@ -2,7 +2,7 @@
 import { useChat } from 'ai/react';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
-import { Inter, Lora} from 'next/font/google';
+
 
 const Chat = () => {
     const { messages, input, handleInputChange, handleSubmit } = useChat({
@@ -23,9 +23,9 @@ const Chat = () => {
             <div className="response">
                 {messages.map((m, index) => (
                     <div key={m.id} className={`chat-line ${m.role === 'user' ?  'user-chat' : 'ai-chat'}`}>
-                        <Image className="avatar" alt="avatar" src={m.role === 'user' ? '/assets/user-avatar.png' : '/assets/ai-avatar.png'} width={64} height={64}></Image>
+                        <Image className="avatar" alt="avatar" src={m.role === 'user' ? '/assets/user-avatar.png' : '/assets/ai-avatar.png'} width={64} height={64}/>
                     <div style={{width: '100%', marginLeft: '16px'}}>
-                        <p className="message">{m.content}</p>
+                    <p className="message" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>{m.content}</p>
                         {index < messages.length-1 && <div className="horiontal-line"/>}
                     </div>
                 </div>
@@ -36,10 +36,10 @@ const Chat = () => {
 
 
     return (
-        <div ref={chatContainer} className="chat">
+        <div ref={chatContainer} className="chat" style={{ fontFamily: 'helvetica, Arial, sans-serif' }}>
             {renderResponse()}
             <form onSubmit={handleSubmit} className="mainForm">
-            <input name="input-field" type="text" placeholder="say it" onChange={handleInputChange} value={input}/>
+            <input name="input-field" type="text" placeholder="say it" onChange={handleInputChange} value={input} className="helvetica-font"/>
             <button type="submit" className="mainButton" />
         </form>
         </div>
