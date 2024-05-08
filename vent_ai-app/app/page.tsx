@@ -64,7 +64,7 @@
 //                   margin: '0 1px',
 //                 }}
 //               >
-//               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+//               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 //               </p> */}
 
 //               {/* <Image
@@ -195,7 +195,7 @@
 // const Home = () => {
 //   const [userMessage, setUserMessage] = useState('');
 //   const [messages, setMessages] = useState([]);
-  
+
 //   const sendMessageToAI = async () => {
 //     const newMessages = [...messages, { role: 'user', content: userMessage }];
 //     setMessages(newMessages);
@@ -255,34 +255,24 @@
 // Since this file will use the useState, we're declaring it as a client component.
 // use client
 
-// 
+//
 "use client";
 
 // use client
 
-import Chat from './components/chat';
+import Chat from "./components/chat";
+import "./page.css";
 
 export default function Home() {
   return (
     <main className="App">
-      <div className='container'>
-        <header style={{
-          backgroundColor: 'rgb(255, 202, 255)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '10px 0'
-        }}>
-          <img
-            src="/assets/logo.png"
-            alt="Logo"
-            style={{
-              width: '200px',
-              height: '200px'
-            }}
-          />
+      <div className="container">
+        <header className="hero">
+          <img className="logo" src="/assets/logo.png" alt="Logo" />
         </header>
-        <p>Talk to <span className='special-text'>Vent-ai</span></p>
+        {/* <p>
+          Talk to <span className="special-text">Vent-ai</span>
+        </p> */}
         <Chat />
       </div>
     </main>

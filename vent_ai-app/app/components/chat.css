@@ -1,0 +1,33 @@
+.avatar-wrapper {
+  display: flex;
+  border-bottom: 1px solid;
+  align-items: center;
+}
+
+.chat-line {
+  max-width: 75%;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.user-chat .chat-line {
+  background-color: #9bec9b;
+  text-align: right;
+}
+
+.ai-chat .chat-line {
+  background-color: #dba7db;
+}
+
+.response {
+  padding: 1rem;
+}
+
+.chat-container {
+  display: flex;
+}
+
+.chat-container.user-chat {
+  justify-content: flex-end;
+}
