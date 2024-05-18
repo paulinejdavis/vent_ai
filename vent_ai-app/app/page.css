@@ -5,6 +5,9 @@
   justify-content: center;
   padding: 10px 0;
 }
+.dark-theme .hero {
+  background-color: rgb(110, 4, 110);
+}
 
 .logo {
   width: 200px;

@@ -259,13 +259,25 @@
 "use client";
 
 // use client
-
+import { useState } from "react";
 import Chat from "./components/chat";
 import "./page.css";
 
 export default function Home() {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  const toggleTheme = () => {
+    switch (theme) {
+      case "light":
+        setTheme("dark");
+        break;
+      case "dark":
+        setTheme("light");
+        break;
+    }
+  };
   return (
-    <main className="App">
+    <main className={`App ${theme}-theme`}>
       <div className="container">
         <header className="hero">
           <img className="logo" src="/assets/logo.png" alt="Logo" />
@@ -273,7 +285,7 @@ export default function Home() {
         {/* <p>
           Talk to <span className="special-text">Vent-ai</span>
         </p> */}
-        <Chat />
+        <Chat toggleTheme={toggleTheme} />
       </div>
     </main>
   );

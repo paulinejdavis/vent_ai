@@ -20,7 +20,11 @@ const Responses = ({ messages }) => {
   );
 };
 
-const Chat = () => {
+interface Params {
+  toggleTheme: Function;
+}
+
+const Chat = (params: Params) => {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
     api: "/api/openai",
   });
@@ -33,6 +37,10 @@ const Chat = () => {
     if (scrollHeight >= scrollTop + offsetHeight) {
       chatContainer.current?.scrollTo(0, scrollHeight + 200);
     }
+  };
+
+  const toggleTheme = () => {
+    params.toggleTheme();
   };
 
   return (
@@ -65,6 +73,9 @@ const Chat = () => {
           submit
         </button>
       </form>
+      <div className="container">
+        <button onClick={toggleTheme}>light/Dark</button>
+      </div>
     </div>
   );
 };

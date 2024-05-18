@@ -15,6 +15,9 @@
   background-color: #9bec9b;
   text-align: right;
 }
+.dark-theme .user-chat .chat-line {
+  background-color: #e4eae4;
+}
 
 .ai-chat .chat-line {
   background-color: #dba7db;

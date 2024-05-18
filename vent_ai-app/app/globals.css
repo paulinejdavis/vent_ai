@@ -1,9 +1,15 @@
-
-
 body {
   background-color: rgb(245, 238, 236); /* chat Pink */
 }
 
 .avatar {
   object-fit: cover;
+}
+
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
 }
