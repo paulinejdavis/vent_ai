@@ -6,9 +6,14 @@
   padding: 10px 0;
 }
 .dark-theme .hero {
-  background-color: rgb(110, 4, 110);
+  background-color: rgb(47, 58, 59);
 }
 
 .logo {
   width: 200px;
+}
+
+.dark-theme {
+  background-color: #2f3a3b;
+  height: 100vh;
 }

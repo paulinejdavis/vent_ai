@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.dark-theme .avatar-wrapper {
+  background: #000;
+  color: #fff;
+  border-bottom-color: #000;
+}
+
 .chat-line {
   max-width: 75%;
   padding: 1rem;
@@ -11,16 +17,30 @@
   color: #fff;
   margin-bottom: 1rem;
 }
+
+.mainForm {
+  background-color: rgb(245, 238, 236);
+  margin-bottom: 2rem;
+}
+/* .dark-theme .chat-line {
+  background-color: #2f3a3b;
+} */
 .user-chat .chat-line {
   background-color: #9bec9b;
   text-align: right;
 }
 .dark-theme .user-chat .chat-line {
-  background-color: #e4eae4;
+  background-color: #e5e5e5;
+  color: black;
 }
 
 .ai-chat .chat-line {
   background-color: #dba7db;
+}
+
+.dark-theme .ai-chat .chat-line {
+  background-color: #000000;
+  color: white;
 }
 
 .response {

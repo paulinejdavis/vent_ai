@@ -2,6 +2,7 @@ import { useChat } from "ai/react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import "./chat.css";
+import { ToggleSlider } from "./toggleSlider/toggleSlider";
 
 const Responses = ({ messages }) => {
   return (
@@ -74,7 +75,8 @@ const Chat = (params: Params) => {
         </button>
       </form>
       <div className="container">
-        <button onClick={toggleTheme}>light/Dark</button>
+        {/* <button onChange={toggleTheme}>light/Dark</button> */}
+        <ToggleSlider onToggle={toggleTheme} />
       </div>
     </div>
   );
