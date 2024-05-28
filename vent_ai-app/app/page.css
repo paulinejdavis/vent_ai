@@ -15,5 +15,5 @@
 
 .dark-theme {
   background-color: #2f3a3b;
-  height: 100vh;
+  min-height: 100vh;
 }
