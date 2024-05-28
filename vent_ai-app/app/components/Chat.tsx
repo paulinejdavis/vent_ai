@@ -65,16 +65,16 @@ const Chat = (params: Params) => {
         <input
           name="input-field"
           type="text"
-          placeholder="say it"
+          // placeholder="say it"
           onChange={handleInputChange}
           value={input}
-          className="helvetica-font"
+          className="userInput"
         />
         <button type="submit" className="mainButton">
-          submit
+          VENT &gt;
         </button>
       </form>
-      <div className="container">
+      <div className="container footer">
         {/* <button onChange={toggleTheme}>light/Dark</button> */}
         <ToggleSlider onToggle={toggleTheme} />
       </div>
