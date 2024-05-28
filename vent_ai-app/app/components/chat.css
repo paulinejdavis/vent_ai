@@ -20,10 +20,43 @@
 
 .mainForm {
   background-color: rgb(245, 238, 236);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  display: flex;
+  background-color: #ffcaff;
+  padding: 8px 1rem;
+  border-radius: 12px;
+}
+
+.mainButton {
+  background-color: #dba7db;
+  color: white;
+  padding: 6px 1rem;
+  border-radius: 3px;
+  border: none;
+  font: bold italic 17px Arial, sans-serif;
+}
+
+.userInput {
+  background-color: #f5eeed;
+  border: none;
+  flex: 1;
+  margin-right: 0.5rem;
+  border-radius: 14px;
 }
 /* .dark-theme .chat-line {
   background-color: #2f3a3b;
+} */
+
+/* .dark-theme .userInput {
+  background-color: red;
+} */
+
+.dark-theme .mainForm {
+  background-color: black;
+}
+
+/* .dark-theme .mainButton {
+  background-color: #000000;
 } */
 .user-chat .chat-line {
   background-color: #9bec9b;
@@ -53,4 +86,24 @@
 
 .chat-container.user-chat {
   justify-content: flex-end;
+}
+
+.footer {
+  padding: 2rem 1rem;
+}
+
+.dark-theme .footer {
+  background-color: #f5eeed;
+}
+
+.ToggleSlider::before {
+  content: "DARK";
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.ToggleButton {
+  position: relative;
 }
