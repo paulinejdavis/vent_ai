@@ -61,20 +61,21 @@ const Chat = (params: Params) => {
         <h2>Jess</h2>
       </div>
       <Responses messages={messages} />
-      <form onSubmit={handleSubmit} className="mainForm">
-        <input
-          name="input-field"
-          type="text"
-          // placeholder="say it"
-          onChange={handleInputChange}
-          value={input}
-          className="userInput"
-        />
-        <button type="submit" className="mainButton">
-          VENT &gt;
-        </button>
-      </form>
+
       <div className="container footer">
+        <form onSubmit={handleSubmit} className="mainForm">
+          <input
+            name="input-field"
+            type="text"
+            // placeholder="say it"
+            onChange={handleInputChange}
+            value={input}
+            className="userInput"
+          />
+          <button type="submit" className="mainButton">
+            VENT &gt;
+          </button>
+        </form>
         {/* <button onChange={toggleTheme}>light/Dark</button> */}
         <ToggleSlider onToggle={toggleTheme} />
       </div>

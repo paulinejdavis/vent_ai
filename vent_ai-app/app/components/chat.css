@@ -8,6 +8,7 @@
   background: #000;
   color: #fff;
   border-bottom-color: #000;
+  border-bottom: 1px solid;
 }
 
 .chat-line {
@@ -47,9 +48,9 @@
   background-color: #2f3a3b;
 } */
 
-/* .dark-theme .userInput {
-  background-color: red;
-} */
+.dark-theme .userInput {
+  background-color: #e5e5e5;
+}
 
 .dark-theme .mainForm {
   background-color: black;
@@ -78,6 +79,8 @@
 
 .response {
   padding: 1rem;
+  overflow: scroll;
+  height: 350px;
 }
 
 .chat-container {
@@ -90,10 +93,13 @@
 
 .footer {
   padding: 2rem 1rem;
+  position: fixed;
+  bottom: 0px;
 }
 
 .dark-theme .footer {
-  background-color: #f5eeed;
+  background-color: #e5e5e5;
+  padding: 2rem 1rem;
 }
 
 .ToggleSlider::before {
