@@ -77,7 +77,9 @@ const Chat = (params: Params) => {
           </button>
         </form>
         {/* <button onChange={toggleTheme}>light/Dark</button> */}
-        <ToggleSlider onToggle={toggleTheme} />
+        <div className="toggleThemeContainer">
+          <ToggleSlider onToggle={toggleTheme} />
+        </div>
       </div>
     </div>
   );

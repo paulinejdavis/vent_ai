@@ -262,6 +262,7 @@
 import { useState } from "react";
 import Chat from "./components/chat";
 import "./page.css";
+//import landing from "./components/landing";
 
 export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
