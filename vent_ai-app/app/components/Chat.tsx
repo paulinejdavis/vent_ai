@@ -50,19 +50,21 @@ const Chat = (params: Params) => {
       className="chat"
       style={{ fontFamily: "helvetica, Arial, sans-serif" }}
     >
-      <div className="avatar-wrapper">
-        <Image
-          className="avatar"
-          alt="avatar"
-          src="/assets/ai-avatar.png"
-          width={64}
-          height={64}
-        />
-        <h2>Jess</h2>
+      <div>
+        <div className="avatar-wrapper">
+          <Image
+            className="avatar"
+            alt="avatar"
+            src="/assets/ai-avatar.png"
+            width={64}
+            height={64}
+          />
+          <h2>Jess</h2>
+        </div>
+        <Responses messages={messages} />
       </div>
-      <Responses messages={messages} />
 
-      <div className="container footer">
+      <div className="footer">
         <form onSubmit={handleSubmit} className="mainForm">
           <input
             name="input-field"

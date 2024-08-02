@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px 0;
+  flex-grow: 0;
 }
 .dark-theme .hero {
   background-color: rgb(47, 58, 59);
@@ -16,4 +17,18 @@
 .dark-theme {
   background-color: #2f3a3b;
   min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.chatContainer {
+  flex-grow: 1;
 }

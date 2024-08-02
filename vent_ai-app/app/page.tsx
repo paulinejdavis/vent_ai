@@ -286,7 +286,9 @@ export default function Home() {
         {/* <p>
           Talk to <span className="special-text">Vent-ai</span>
         </p> */}
-        <Chat toggleTheme={toggleTheme} />
+        <div className="chatContainer">
+          <Chat toggleTheme={toggleTheme} />
+        </div>
       </div>
     </main>
   );
