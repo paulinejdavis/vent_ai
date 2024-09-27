@@ -1,6 +1,6 @@
 import { useChat } from "ai/react";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./chat.css";
 import { ToggleSlider } from "./toggleSlider/toggleSlider";
 
